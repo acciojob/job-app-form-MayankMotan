@@ -4,6 +4,11 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		.required: : after{
+			content: ' *';
+		}
+	</style>
 </head>
 
 <body>
@@ -16,14 +21,14 @@
 		<input type="email" id="email" required>
 		<br>
 
-		<label for="gender">Gender:</label>
+		<label class="required" for="gender">Gender:</label>
 		<label for="male">Male</label>
-		<input type="radio" name="gender"  required>
+		<input type="radio" name="gender" id="male"  required>
 		<label for="female">Female</label>
-		<input type="radio" name="gender" required>
+		<input type="radio" name="gender" id="female" required>
 		<br>
 
-		<label for="laptopbrands">LaptopBrands:</label>
+		<label for="laptop brands">Laptop Brands:</label>
 		<select id="laptop">
 			<option value="apple">Apple</option>
 			<option value="asus">Asus</option>
@@ -35,7 +40,7 @@
 		<input type="number" id="age" required>
 		<br>
 
-		<label for="dateofbirth">DateofBirth:</label>
+		<label for="date of birth">Date of Birth:</label>
 		<input type="date" id="dob" required>
 		<br>
 
@@ -43,7 +48,7 @@
 		<input type="Password" id="password" required>
 		<br>
 
-		<label for="portfoliourl">PortfolioUrl:</label>
+		<label for="portfolio url">Portfolio Url:</label>
 		<input type="url" id="portfolio" >
 		<br>
 		
